@@ -23,7 +23,10 @@ function mosntrarSQL(){
 				alert('La tabla TAB: '+largo+' filas encontradas');
 				for(i=0;i<largo;i++){
 					alert('ID = '+res.rows.item(i).nomId+'\nNombre = '+res.rows.item(i).nombre);
+					
 				}
+			},function(err){
+				alert(err);
 			});
 		});
 	});
